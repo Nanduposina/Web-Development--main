@@ -1,0 +1,134 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Alice Blue */
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background: #b6bfff; 
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4682b4; /* Steel Blue */
+}
+
+main {
+    margin: 40px 0;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 40px; /* Increased margin to 40px */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    border-bottom: 3px solid #b6b9ff; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+section p, section ul {
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    background: #b6bfff; 
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Decrease font size for smaller screens */
+    }
+
+    nav ul li {
+        display: block; /* Change navigation links to display vertically */
+        margin: 10px 0; /* Add margin between navigation links */
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Decrease font size for smaller screens */
+    }
+
+    main {
+        margin: 20px 0; /* Decrease margin for smaller screens */
+    }
+
+    section {
+        padding: 15px; /* Decrease padding for smaller screens */
+    }
+
+    section h2 {
+        font-size: 1.5em; /* Decrease font size for smaller screens */
+    }
+
+    footer {
+        padding: 8px 0; /* Decrease padding for smaller screens */
+    }
+
+    footer p {
+        font-size: 0.8em; /* Decrease font size for smaller screens */
+    }
+}
